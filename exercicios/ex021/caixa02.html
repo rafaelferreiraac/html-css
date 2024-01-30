@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping Tags</title>
+  <style>
+
+    body { 
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #e2c5c5;
+      margin: 0px;
+    }
+
+    header { 
+      background-color: white;
+      padding: 10px 10px 10px 20px;
+      margin: 10px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    header > h1 { 
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    nav { 
+      background-color: #e5b6b6;
+      padding: 3px;
+      text-align: center;
+      box-shadow: 8px 8px 10px 0px #0000005e;
+      border-radius: 10px;
+    }
+
+    nav > a { 
+      text-decoration: none;
+    }
+
+    nav > a:hover { 
+      text-decoration: underline;
+    }
+
+    nav > a:active { 
+      color: white;
+    }
+
+    .menu { 
+      padding-right: 50px;
+    }
+
+    main { 
+      background-color: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    main > section > h2 { 
+      text-align: center;
+      margin: 4px 0px;
+    }
+
+    article#assuntoprincipal {
+      background-color: #e5b6b6;
+      padding: 1px 1px 1px 10px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    article > aside { 
+      background-color: #ecd9d9;
+      border-radius: 10px;
+      padding: 7px;
+      margin:7px;
+    }
+
+    article > aside > p { 
+      margin: 0px;
+    }
+
+    footer { 
+      background-color: #c8dae1;
+      padding: 4px;
+      text-align: center;
+    }
+
+    footer > p { 
+      margin: 0px;
+    }
+
+  </style>
+</head>
+<body> 
+  <header>
+    <h1>Meu Site</h1>
+    <nav>
+        <a href="#" class="menu">Menu</a>
+        <a href="#" class="menu">Sobre Nós</a>
+        <a href="#" class="menu">Entre em contato</a>
+        <a href="#" class="menu">Rastreamento</a>
+        <a href="#" class="menu">Perfil</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="assuntos">
+      <h2>Blog Versase</h2>
+    </section>
+
+    <section id="noticias">
+    <article id="assuntoprincipal">
+        <h2>Notícia sobre o enriquecimento de Carlos Rafael</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dolor laudantium ex numquam consequatur, quisquam deleniti natus impedit eligendi possimus aperiam doloribus minima ullam consequuntur maiores quam quaerat itaque eius?</p>
+        <aside>
+            <p>Artigo escrito por Carlos Rafael</p>
+        </aside>
+      </article>
+      <article>
+
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido pelo Versase</p>
+  </footer>
+</body>
+</html>

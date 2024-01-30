@@ -1,0 +1,284 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'Android';
+  src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+  font-weight: normal;
+}
+
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/check-o.css');
+
+:root { 
+  /*Header*/
+  --cor-fundoheader: linear-gradient(to bottom, #77f577, #044b04);
+  --cor-letralinkmenuhover: darkgreen;
+  --cor-fundolinkmenuhover: #44c444;
+  /*Corpo*/
+  --cor-section: white;
+  --cor-letrah2e3: darkgreen;
+  --cor-fundoh3: linear-gradient(100deg, #73f573, transparent);
+  /*A primeira Versão*/
+  --cor-letralink: #044b04;
+  --cor-fundolink: #73f573;
+  /*Video*/
+  --cor-fundovideo: darkgreen;
+  /*Quer aprender mais*/
+  --cor-queraprendermaisprincipal: #44c444;
+  --cor-queraprendermais: lightblue;
+  /*Footer*/
+  --cor-fundofooter: darkgreen;
+
+  /*Fontes*/
+  --fonte-padrão: Arial, Verdana, Helvetica, sans-serif; 
+  --fonte-destaque: 'Bebas Neue', sans-serif;
+  --fonte-android: 'Android', cursive;
+
+
+}
+
+body { 
+  font-family: var(--fonte-padrão);
+  margin: 0px;
+  background-color: rgb(140, 219, 140);
+}
+
+a.externo::after { 
+  content: '\00A0\1F517';
+}
+
+/*Cabeçalho*/
+header { 
+  font-family: var(--fonte-destaque);
+  color: white;
+  background-image: var(--cor-fundoheader);
+  height: 100%;
+  margin: 0px;
+}
+
+#titulo-principal { 
+  text-align: center;
+  padding-top: 30px;
+  font-weight: normal;
+  margin: 0px;
+  font-size: 3em;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+#paragrafo-principal { 
+  font-family: var(--fonte-padrão);
+  text-align: center;
+  font-size: 1.2em;
+  max-width: 600px;
+  padding-right: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+/*Menu de Liks*/
+
+nav { 
+  margin: 0px;
+  font-family: var(--fonte-padrão);
+  box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.363);
+}
+
+nav > ul { 
+  list-style: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+nav > ul > li { 
+  display: inline-block;
+}
+
+nav > ul > li > a { 
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin-right: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav > ul > li > a:hover { 
+  color: var(--cor-letralinkmenuhover);
+  background-color: var(--cor-fundolinkmenuhover);
+  transition-duration: 0.3s;
+}
+
+/*Corpo*/ 
+
+main { 
+  margin: auto;
+  font-family: var(--fonte-padrão);
+  text-indent: 30px;
+  min-width: 300px;
+  max-width: 1000px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.41);
+  margin-bottom: 30px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+main p { 
+  line-height: 1.4em;
+}
+
+main > section { 
+  background-color: var(--cor-section);
+  padding: 15px;
+  text-align: justify;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/*Historia do Mascote do Android*/ 
+
+main > section > article > h2 { 
+  color: var(--cor-letrah2e3);
+  margin-top: 0px;
+  font-family: var(--fonte-android);
+  font-weight: normal;
+  font-size: 1.8em;
+}
+
+/*A primeira Versão*/ 
+
+/*Todos os H3*/
+main > section > article > h3 { 
+  color: var(--cor-letrah2e3);
+  background-image: var(--cor-fundoh3);
+  font-family: var(--fonte-android);
+  font-weight: normal;
+}
+
+#a-primeira-versao { 
+  a { 
+    color: var(--cor-letralink);
+    font-weight: bold;
+    background-color: var(--cor-fundolink);
+    padding: 2px 6px;
+    text-decoration: none;
+  }
+  a:hover { 
+    text-decoration: underline;
+  }
+  strong { 
+    color: var(--cor-letralink);
+  }
+}
+
+/*Todas as fotos*/ 
+.img {
+  text-align: center;
+}
+
+/*Surge um novo mascote*/ 
+
+#surge-um-novo-mascote { 
+  a { 
+    color: var(--cor-letralink);
+    font-weight: bold;
+    background-color: var(--cor-fundolink);
+    padding: 2px 6px;
+    text-decoration: none;
+  }
+  a:hover { 
+    text-decoration: underline;
+  }
+  strong { 
+    color: var(--cor-letralink);
+  }
+}
+
+/*Video*/ 
+
+#video { 
+  background-color: var(--cor-fundovideo);
+  padding: 20px;
+  margin: 10px -15px 20px -15px;
+  padding-bottom: 57%;
+  position: relative;
+}
+
+#video > iframe { 
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+/*Quer aprender mais ? */ 
+
+#quer-aprender-mais { 
+  background-color: var(--cor-queraprendermais);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+#quer-aprender-mais-principal { 
+  background-color: var(--cor-queraprendermaisprincipal);
+  color: white;
+  font-weight: bolder;
+  padding: 5px;
+  border-radius: 10px 10px 0px 0px;
+  margin-bottom: 0px;
+  text-indent: 5px;
+}
+
+.quer-aprender-mais-continuacao { 
+  margin: 0px;
+  padding: 10px;
+  a { 
+    color: var(--cor-letralink);
+    font-weight: bold;
+    padding: 2px 6px;
+    text-decoration: none;
+  }
+  a:hover { 
+    text-decoration: underline;
+  }
+  strong { 
+    color: var(--cor-letralink);
+  }
+}
+
+.quer-aprender-mais-lista { 
+  display: inline-block;
+  list-style-image: url('pacote-projeto-d010/check-solid.svg');
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+/*Ultimo parágrafo abaixo do azul*/ 
+
+#paragrafo-final { 
+  strong { 
+    color: var(--cor-letralink);
+  }
+}
+
+footer { 
+  background-color: var(--cor-fundofooter);
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+footer > p > a { 
+  text-decoration: none;
+  color: white;
+}
+
+footer > p > a:hover { 
+  text-decoration: underline;
+}
+
+footer > p { 
+  margin: 0px;
+}
