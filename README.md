@@ -3,4 +3,4 @@
 
  Estou aprendendo a criar sites e gerenciar repositórios!
 
- <a href="https://youtube.com">Abrir o Youtube<a>
+ <a href="https://youtube.com" target="_blank" >Abrir o Youtube<a>
